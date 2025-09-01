@@ -1,0 +1,509 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/com.unity.cinemachine.editor.csproj": {}
+  },
+  "projects": {
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Cinemachine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Cinemachine.csproj",
+        "projectName": "Cinemachine",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Cinemachine.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/Cinemachine/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/com.unity.cinemachine.editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/com.unity.cinemachine.editor.csproj",
+        "projectName": "com.unity.cinemachine.editor",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/com.unity.cinemachine.editor.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/com.unity.cinemachine.editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Cinemachine.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Cinemachine.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.Editor.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.Editor.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj",
+        "projectName": "Unity.Timeline",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/Unity.Timeline/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.Editor.csproj",
+        "projectName": "Unity.Timeline.Editor",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.Editor.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/Unity.Timeline.Editor/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Unity.Timeline.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj",
+        "projectName": "UnityEditor.TestRunner",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/UnityEditor.TestRunner/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.UI.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/UnityEditor.UI/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEditor.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj"
+              },
+              "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+                "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj",
+        "projectName": "UnityEngine.TestRunner",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.TestRunner.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/UnityEngine.TestRunner/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/UnityEngine.UI.csproj",
+        "packagesPath": "/Users/joseph/.nuget/packages/",
+        "outputPath": "/Users/joseph/Documents/GitHub/hop-hop-yeet/hop hop yeet/Temp/obj/Debug/UnityEngine.UI/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joseph/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
