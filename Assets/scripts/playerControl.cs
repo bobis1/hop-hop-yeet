@@ -101,8 +101,12 @@ public class playerControl : MonoBehaviour
             //playerPosion.y += playerJump
             if (isGrounded == true)
             {
-                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);            
+                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            
         }
     }
     void OnCollisionExit(Collision collision)
