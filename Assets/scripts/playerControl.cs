@@ -9,12 +9,21 @@ using Cinemachine;
 
 public class playerControl : MonoBehaviour
 {
+    [Header("Player")]
     public Vector3 playerPosion;
     public float playerSpeed;
     public float playerJump;
     public Rigidbody rb;
     private bool isGrounded;
     public float airStrafe;
+
+
+    [Header("Virtual Camera")]
+    public GameObject FrontVirtualCam;
+    public GameObject BackVirtualCam;
+    public bool isForward;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -102,20 +111,36 @@ public class playerControl : MonoBehaviour
             //playerPosion.y += playerJump
             if (isGrounded == true)
             {
-                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
+            rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
+            Debug.Log("Jump");
             }
         }
-        if(Input.GetKeyDown(KeyCode.E)){
-            
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (isForward == true)
+            {
+                FrontVirtualCam.SetActive(false);
+                BackVirtualCam.SetActive(true);
+                isForward = false;
+            }
+            else if (isForward == false)
+            {
+                FrontVirtualCam.SetActive(true);
+                BackVirtualCam.SetActive(false);
+                isForward = true;
+            }
         }
+
+
     }
 
-    void OnCollisionExit(Collision collision)
-    {
-        isGrounded = false;
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        isGrounded = true;
-    }
+        void OnCollisionExit(Collision collision)
+        {
+            isGrounded = false;
+        }
+
+        void OnCollisionEnter(Collision collision)
+        {
+            isGrounded = true;
+        }
 }
