@@ -2813,7 +2813,7 @@ PrefabInstance:
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: BackVirtualCam
       value: 
-      objectReference: {fileID: 1718668902}
+      objectReference: {fileID: 1124399737}
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: LeftVirtualCam
       value: 
@@ -2821,7 +2821,7 @@ PrefabInstance:
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: FrontVirtualCam
       value: 
-      objectReference: {fileID: 1124399737}
+      objectReference: {fileID: 1718668902}
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: RightVirtualCam
       value: 
