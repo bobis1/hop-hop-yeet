@@ -13,6 +13,7 @@ public class playerControl : MonoBehaviour
     public float playerJump;
     public Rigidbody rb;
     private bool isGrounded;
+    public float airStrafe;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +29,17 @@ public class playerControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            playerPosion = transform.position;
-            playerPosion.z += playerSpeed;
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.z += playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.z += playerSpeed;
+            }
+
             //transform.position = playerPosion;
             //rb.AddForce(playerPosion);
             rb.MovePosition(playerPosion);
@@ -37,16 +47,34 @@ public class playerControl : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            playerPosion = transform.position;
-            playerPosion.z -= playerSpeed;
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.z -= playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.z -= playerSpeed;
+            }
+
             //transform.position = playerPosion;
             //rb.AddForce(playerPosion);
             rb.MovePosition(playerPosion);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            playerPosion = transform.position;
-            playerPosion.x -= playerSpeed;
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.x -= playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.x -= playerSpeed;
+            }
+
             //transform.position = xplayerPosion;
             //rb.AddForce(playerPosion);
             rb.MovePosition(playerPosion);
@@ -54,10 +82,16 @@ public class playerControl : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            playerPosion = transform.position;
-            playerPosion.x += playerSpeed;
-            //transform.position = playerPosion;
-            //rb.AddForce(playerPosion);
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.x += playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.x += playerSpeed;
+            }
             rb.MovePosition(playerPosion);
 
         }
@@ -67,8 +101,12 @@ public class playerControl : MonoBehaviour
             //playerPosion.y += playerJump
             if (isGrounded == true)
             {
-                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);            
+                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            
         }
     }
     void OnCollisionExit(Collision collision)
