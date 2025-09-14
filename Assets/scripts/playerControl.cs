@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Cinemachine;
 
 public class playerControl : MonoBehaviour
 {
@@ -104,11 +105,11 @@ public class playerControl : MonoBehaviour
                 rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        if(Input.GetKeyDown(KeyCode.E)){
             
         }
     }
+
     void OnCollisionExit(Collision collision)
     {
         isGrounded = false;
