@@ -21,7 +21,10 @@ public class playerControl : MonoBehaviour
     [Header("Virtual Camera")]
     public GameObject FrontVirtualCam;
     public GameObject BackVirtualCam;
-    public bool isForward;
+    public GameObject LeftVirtualCam;
+    public GameObject RightVirtualCam;
+    public GameObject currentCam;
+
 
 
     // Start is called before the first frame update
@@ -111,26 +114,34 @@ public class playerControl : MonoBehaviour
             //playerPosion.y += playerJump
             if (isGrounded == true)
             {
-            rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
-            Debug.Log("Jump");
+                rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
+                Debug.Log("Jump");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (isForward == true)
-            {
-                FrontVirtualCam.SetActive(false);
-                BackVirtualCam.SetActive(true);
-                isForward = false;
-            }
-            else if (isForward == false)
-            {
-                FrontVirtualCam.SetActive(true);
-                BackVirtualCam.SetActive(false);
-                isForward = true;
-            }
+            currentCam.SetActive(false);
+            currentCam = FrontVirtualCam;
+            currentCam.SetActive(true);
         }
-
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            currentCam.SetActive(false);
+            currentCam = BackVirtualCam;
+            currentCam.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            currentCam.SetActive(false);
+            currentCam = LeftVirtualCam;
+            currentCam.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            currentCam.SetActive(false);
+            currentCam = RightVirtualCam;
+            currentCam.SetActive(true);
+        }
 
     }
 
