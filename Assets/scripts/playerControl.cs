@@ -44,21 +44,70 @@ public class playerControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            isGroundedMovement();
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.z += playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.z += playerSpeed;
+            }
+
+            //transform.position = playerPosion;
+            //rb.AddForce(playerPosion);
+            rb.MovePosition(playerPosion);
 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            isGroundedMovement();
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.z -= playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.z -= playerSpeed;
+            }
+
+            //transform.position = playerPosion;
+            //rb.AddForce(playerPosion);
+            rb.MovePosition(playerPosion);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            isGroundedMovement();
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.x -= playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.x -= playerSpeed;
+            }
+
+            //transform.position = xplayerPosion;
+            //rb.AddForce(playerPosion);
+            rb.MovePosition(playerPosion);
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            isGroundedMovement();
+            if (isGrounded == false)
+            {
+                playerPosion = transform.position;
+                playerPosion.x += playerSpeed * airStrafe;
+            }
+            if (isGrounded == true)
+            {
+                playerPosion = transform.position;
+                playerPosion.x += playerSpeed;
+            }
+            rb.MovePosition(playerPosion);
 
         }
         if (Input.GetKeyDown(KeyCode.Space))
@@ -102,16 +151,17 @@ public class playerControl : MonoBehaviour
 
     }
     private void isGroundedMovement() {
-        if (!isGrounded)
+        if (isGrounded == false)
         {
             playerPosion = transform.position;
             playerPosion.x -= playerSpeed * airStrafe;
-        } else if (isGrounded)
+        }
+        if (isGrounded == true)
         {
             playerPosion = transform.position;
             playerPosion.x -= playerSpeed;
         }
-
+        
         rb.MovePosition(playerPosion);
 
     }

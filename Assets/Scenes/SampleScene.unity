@@ -1656,6 +1656,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8257372913448106994, guid: a2b17f3b2dd1844c8915cb789a0465b6, type: 3}
   m_PrefabInstance: {fileID: 344160912}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &822310940 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2559647500241883288, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
+  m_PrefabInstance: {fileID: 1341666718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &842762470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8257372913448106994, guid: a2b17f3b2dd1844c8915cb789a0465b6, type: 3}
@@ -2814,6 +2819,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 822310940}
+    - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: airStrafe
       value: 0.45
       objectReference: {fileID: 0}
@@ -2825,6 +2834,10 @@ PrefabInstance:
       propertyPath: currentCam
       value: 
       objectReference: {fileID: 1124399737}
+    - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
+      propertyPath: playerDash
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 420900972999115715, guid: 9306ce20a2cb249618e71074c07b4cbf, type: 3}
       propertyPath: BackVirtualCam
       value: 
