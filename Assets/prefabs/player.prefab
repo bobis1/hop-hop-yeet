@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4468316638387617253}
   - component: {fileID: 262953498330076503}
   - component: {fileID: 8066786145164891084}
-  - component: {fileID: 6276361044773660932}
   - component: {fileID: 2559647500241883288}
   - component: {fileID: 420900972999115715}
+  - component: {fileID: 7553753438637051154}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -86,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6276361044773660932
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4087452723257434060}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2559647500241883288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,3 +129,30 @@ MonoBehaviour:
   playerSpeed: 0.5
   playerJump: 10
   rb: {fileID: 0}
+  airStrafe: 0
+  FrontVirtualCam: {fileID: 0}
+  BackVirtualCam: {fileID: 0}
+  LeftVirtualCam: {fileID: 0}
+  RightVirtualCam: {fileID: 0}
+  currentCam: {fileID: 0}
+--- !u!65 &7553753438637051154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4087452723257434060}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1351838, y: 2.5903492, z: 2.2954206}
+  m_Center: {x: 0.0402233, y: 0.2951746, z: -0.12056208}

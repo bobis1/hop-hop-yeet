@@ -13,9 +13,11 @@ public class playerControl : MonoBehaviour
     public Vector3 playerPosion;
     public float playerSpeed;
     public float playerJump;
+    public float playerDash;
     public Rigidbody rb;
     private bool isGrounded;
     public float airStrafe;
+
 
 
     [Header("Virtual Camera")]
@@ -42,70 +44,21 @@ public class playerControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            if (isGrounded == false)
-            {
-                playerPosion = transform.position;
-                playerPosion.z += playerSpeed * airStrafe;
-            }
-            if (isGrounded == true)
-            {
-                playerPosion = transform.position;
-                playerPosion.z += playerSpeed;
-            }
-
-            //transform.position = playerPosion;
-            //rb.AddForce(playerPosion);
-            rb.MovePosition(playerPosion);
+            isGroundedMovement();
 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            if (isGrounded == false)
-            {
-                playerPosion = transform.position;
-                playerPosion.z -= playerSpeed * airStrafe;
-            }
-            if (isGrounded == true)
-            {
-                playerPosion = transform.position;
-                playerPosion.z -= playerSpeed;
-            }
-
-            //transform.position = playerPosion;
-            //rb.AddForce(playerPosion);
-            rb.MovePosition(playerPosion);
+            isGroundedMovement();
         }
         if (Input.GetKey(KeyCode.A))
         {
-            if (isGrounded == false)
-            {
-                playerPosion = transform.position;
-                playerPosion.x -= playerSpeed * airStrafe;
-            }
-            if (isGrounded == true)
-            {
-                playerPosion = transform.position;
-                playerPosion.x -= playerSpeed;
-            }
-
-            //transform.position = xplayerPosion;
-            //rb.AddForce(playerPosion);
-            rb.MovePosition(playerPosion);
+            isGroundedMovement();
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            if (isGrounded == false)
-            {
-                playerPosion = transform.position;
-                playerPosion.x += playerSpeed * airStrafe;
-            }
-            if (isGrounded == true)
-            {
-                playerPosion = transform.position;
-                playerPosion.x += playerSpeed;
-            }
-            rb.MovePosition(playerPosion);
+            isGroundedMovement();
 
         }
         if (Input.GetKeyDown(KeyCode.Space))
@@ -117,6 +70,10 @@ public class playerControl : MonoBehaviour
                 rb.AddForce(transform.up * playerJump, ForceMode.Impulse);
                 Debug.Log("Jump");
             }
+        }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            rb.AddForce(transform.forward * playerDash);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -144,7 +101,20 @@ public class playerControl : MonoBehaviour
         }
 
     }
+    private void isGroundedMovement() {
+        if (!isGrounded)
+        {
+            playerPosion = transform.position;
+            playerPosion.x -= playerSpeed * airStrafe;
+        } else if (isGrounded)
+        {
+            playerPosion = transform.position;
+            playerPosion.x -= playerSpeed;
+        }
 
+        rb.MovePosition(playerPosion);
+
+    }
         void OnCollisionExit(Collision collision)
         {
             isGrounded = false;
